@@ -1,18 +1,25 @@
 #+TODO: HOLD(h)
 
-* Birdz 
+* Flutter
 
-** Best Episode of Birdz
-SCHEDULED: <2020-05-11 Mon 19:00-20:30>
+** Birdz 
 
-** Better Episode of Birdz
-SCHEDULED: <2020-05-11 Mon 21:00-21:30>
+*** Building Bird Quiz with a Tinder like interface using Flutter
+SCHEDULED: <2020-05-09 Sat 18:30-20:00>
+
+
+*** Building Bird Quiz with a Tinder like interface using Flutter
+SCHEDULED: <2020-05-11 Mon 18:30-20:00>
+
+*** HOLD Building Bird Quiz with a Tinder like interface using Flutter
+SCHEDULED: <2020-05-11 Tue 18:30-20:00>
+
+** Multiplayer Game
+
+*** Building a Multiplayer 2D Game in Flutter
+SCHEDULED: <2020-05-10 Sun 16:00-17:45>
+
+*** Building a Multiplayer 2D Game in Flutter
+SCHEDULED: <2020-05-10 Sun 19:00-20:00>
 
 * Twitch Hacks
-
-** First Twitch Hack
-SCHEDULED: <2020-05-11 Mon 10:00-11:30>
-
-** Second Twitch Hack
-SCHEDULED: <2020-05-13 Wed 19:00-21:00>
-
