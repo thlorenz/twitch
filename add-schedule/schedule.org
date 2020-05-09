@@ -1,0 +1,14 @@
+#+TODO: HOLD(h)
+
+* Birdz 
+
+** First Episode of Birdz
+SCHEDULED: <2020-05-09 Sat 13:00 +1w>
+
+** Second Episode of Birdz
+SCHEDULED: <2020-05-10 Sun 11:00-14:00 +1w>
+
+* Twitch Hacks
+
+** First Hack
+SCHEDULED: <2020-05-11 Mon 10:00-11:00>

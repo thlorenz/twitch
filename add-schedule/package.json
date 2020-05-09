@@ -1,0 +1,10 @@
+{
+  "name": "add-schedule",
+  "version": "0.0.0",
+  "description": "Schedule twitch streams programatically",
+  "main": "schedule.js",
+  "license": "MIT",
+  "dependencies": {
+    "org": "^0.2.0"
+  }
+}
