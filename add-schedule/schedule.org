@@ -2,13 +2,17 @@
 
 * Birdz 
 
-** First Episode of Birdz
-SCHEDULED: <2020-05-09 Sat 13:00 +1w>
+** Best Episode of Birdz
+SCHEDULED: <2020-05-11 Mon 19:00-20:30>
 
-** Second Episode of Birdz
-SCHEDULED: <2020-05-10 Sun 11:00-14:00 +1w>
+** Better Episode of Birdz
+SCHEDULED: <2020-05-11 Mon 21:00-21:30>
 
 * Twitch Hacks
 
-** First Hack
-SCHEDULED: <2020-05-11 Mon 10:00-11:00>
+** First Twitch Hack
+SCHEDULED: <2020-05-11 Mon 10:00-11:30>
+
+** Second Twitch Hack
+SCHEDULED: <2020-05-13 Wed 19:00-21:00>
+
