@@ -8,4 +8,6 @@ node $DIR/add-schedule/schedule-twitch
 node $DIR/add-schedule/schedule-html
 
 git add $DIR/../schedule.html
+git add $DIR/tools/add-schedule/schedule.org
+
 git commit -m "schedule: regenerated html schedule"
