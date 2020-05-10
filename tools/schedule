@@ -4,4 +4,4 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/secret.sh
 
-node $DIR/add-schedule/schedule
+node $DIR/add-schedule/schedule-twitch

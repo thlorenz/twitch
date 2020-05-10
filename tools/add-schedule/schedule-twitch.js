@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs')
-const unschedule = require('./unschedule')
+const unschedule = require('./unschedule-twitch')
 const extractSchedule = require('./lib/extract-schedule')
 const fetchAddSchedule = require('./lib/fetch-add-schedule')
 const inspect = require('./lib/inspect')
