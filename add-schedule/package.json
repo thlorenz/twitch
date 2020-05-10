@@ -5,6 +5,10 @@
   "main": "schedule.js",
   "license": "MIT",
   "dependencies": {
+    "node-fetch": "^2.6.0",
     "org": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.7"
   }
 }
