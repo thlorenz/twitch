@@ -11,8 +11,8 @@ SCHEDULED: <2020-05-09 Sat 19:30-21:00>
 *** Building Bird Quiz with a Tinder like interface using Flutter
 SCHEDULED: <2020-05-11 Mon 18:30-20:00>
 
-*** HOLD Building Bird Quiz with a Tinder like interface using Flutter
-SCHEDULED: <2020-05-11 Tue 18:30-20:00>
+*** Building Bird Quiz with a Tinder like interface using Flutter
+SCHEDULED: <2020-05-11 Tue 18:30-20:15>
 
 ** Multiplayer Game
 
@@ -24,7 +24,7 @@ SCHEDULED: <2020-05-10 Sun 18:30-20:45>
 
 * Twitch Hacks
 
-*** Generating Schedule HTML Page from Org Mode
+*** HOLD Generating Schedule HTML Page from Org Mode
 SCHEDULED: <2020-05-12 Tue 18:30-20:00>
 
 - [ ] Strike through items that are on hold or point it out very obviously in another way
