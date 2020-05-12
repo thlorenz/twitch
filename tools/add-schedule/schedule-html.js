@@ -79,6 +79,7 @@ function getPageHtml(itemsHtml) {
     <h1>thlorenz stream schedule</h1>
 <div class="center">
     <a href="https://www.twitch.tv/thlorenz">Follow on Twitch</a>
+    <span> Times are shown in Mountain Time which is 2 hours behind EST.</span>
 ${itemsHtml}
 </div>
   </body>
