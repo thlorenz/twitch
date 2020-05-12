@@ -14,7 +14,7 @@ function twitchifyDay(day) {
       return 'TUESDAY'
     case 'Wed':
       return 'WEDNESDAY'
-    case 'Thur':
+    case 'Thu':
       return 'THURSDAY'
     case 'Fri':
       return 'FRIDAY'
