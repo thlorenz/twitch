@@ -14,7 +14,16 @@ SCHEDULED: <2020-05-11 Mon 18:30-20:00>
 *** Building Bird Quiz with a Tinder like interface using Flutter
 SCHEDULED: <2020-05-11 Tue 18:30-20:15>
 
+*** Building Bird Quiz with a Tinder like interface using Flutter
+SCHEDULED: <2020-05-15 Fri 18:30-20:15>
+
 ** Multiplayer Game
+
+*** Building a Multiplayer 2D Game in Flutter
+SCHEDULED: <2020-05-14 Thu 18:30-20:15>
+
+*** Building a Multiplayer 2D Game in Flutter
+SCHEDULED: <2020-05-14 Fri 18:30-20:15>
 
 *** Building a Multiplayer 2D Game in Flutter
 SCHEDULED: <2020-05-10 Sun 15:00-16:45>
