@@ -36,7 +36,7 @@ SCHEDULED: <2020-05-10 Sun 18:30-20:45>
 
 * Twitch Hacks
 
-*** Generating Schedule HTML Page from Org Mode
+*** Setting Twitch Status from Emacs Org Mode
 SCHEDULED: <2020-05-12 Sat 18:30-20:15>
 
 - [ ] Strike through items that are on hold or point it out very obviously in another way
