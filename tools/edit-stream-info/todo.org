@@ -1,0 +1,63 @@
+#+TITLE: Twitch Hacks
+
+* Edit Stream Info from CURL Version [0/0]
+
+** Twitch API + CURL [2/3]
+:LOGBOOK:
+CLOCK: [2020-05-16 Sat 18:37]--[2020-05-16 Sat 19:27] =>  0:50
+:END:
+
+- [X] determine curl command to set stream info
+- [X] set channel title via curl
+- [ ] set live notification via curl scripts
+
+*** Status
+
+Blocked on invalid authorization token for kraken API.
+  
+* Edit Stream Info from Org Mode Basic Version [0/0]
+
+** Org Mode Parsing [/]
+
+- [ ] parse heading and text of an org file section to extract 
+  - [ ] stream title
+  - [ ] go live notification
+    
+** Compose curl Command and send to Twitch
+
+- [ ] send curl command from inside emacs via elisp
+- [ ] function that parses org file section + composes curl command
+- [ ] use env vars in elisp to fill in tokens
+- [ ] auto send to twitch
+- [ ] provide feedback from response
+
+* Enhanced Version [0/0]
+
+** Category [/]
+
+- [ ] Include /Science and Technology/ category when editing stream info
+** Search Tags [/]
+
+- [ ] look into how to send search tags
+- [ ] if they are ids create map of string to id
+- [ ] either use ids directly in org mode or parse tag strings into ids
+- [ ] include ids with edit stream info
+  
+* Resources
+
+** Twitch API
+
+- [[https://github.com/twitchdev/authentication-node-sample][getting auth token via node.js]]  
+  
+** API requests from Emacs
+- [[https://dev.twitch.tv/docs/api/][twitch-api docs]]  
+- [[https://github.com/skeeto/elfeed][Emacs web feeds client]] 
+- [[https://github.com/atheriel/helm-twitch][checking whether your favourite Twitch.tv streamer is online, using the Helm framework]] 
+  
+** Org Mode
+
+- [[http://ergoemacs.org/emacs/elisp_parse_org_mode.html][parse org mode in emacs tutorial]] 
+
+** Elisp Development
+
+- [[https://www.gonsie.com/blorg/part1-org-for-dev-elisp.html][org mode to develop lisp]] 
