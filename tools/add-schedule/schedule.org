@@ -28,9 +28,6 @@ SCHEDULED: <2020-05-14 Thu 18:30-20:15>
 *** Building a Multiplayer 2D Game in Flutter
 SCHEDULED: <2020-05-14 Fri 18:30-20:15>
 
-*** Building a Multiplayer 2D Game in Flutter
-SCHEDULED: <2020-05-10 Sun 15:00-16:45>
-
 *** HOLD Building a Multiplayer 2D Game in Flutter
 SCHEDULED: <2020-05-10 Sun 18:30-20:45>
 
