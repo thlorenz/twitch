@@ -1,0 +1,20 @@
+#+BEGIN_SRC sh
+CHANNEL_ID='145377094' \
+curl \
+    -H "Authorization: OAuth $TWITCH_OAUTH_ID" \
+    -H "Client-ID: $TWITCH_CLIENT_ID" \
+    -H 'Accept: application/vnd.twitchtv.v5+json' \
+    -H 'Content-Type: application/json' \
+    -d json_body \
+    -X PUT "https://api.twitch.tv/kraken/channels/$CHANNEL_ID"
+#+END_SRC
+
+#+BEGIN_SRC js
+const json_body = {
+  channel: {
+    status: "Hacking on an Emacs org mode / twitch integration.",
+    game: "Science & Technology",
+    channel_feed_enabled: true,
+  },
+}
+#+END_SRC
