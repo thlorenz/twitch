@@ -36,7 +36,7 @@ SCHEDULED: <2020-05-10 Sun 18:30-20:45>
 
 * Twitch Hacks
 
-*** HOLD Generating Schedule HTML Page from Org Mode
-SCHEDULED: <2020-05-12 Tue 18:30-20:00>
+*** Generating Schedule HTML Page from Org Mode
+SCHEDULED: <2020-05-12 Sat 18:30-20:15>
 
 - [ ] Strike through items that are on hold or point it out very obviously in another way
