@@ -7,7 +7,7 @@
 (require 'org-element)
 (require 'cl-macs)
 
-(defun first--header+content ()
+(defun twitch--edit-stream-first-header+content ()
   "Get first header and it's content from a buffer."
   (let ((bb))
     (block bb
@@ -20,35 +20,21 @@
                (org-element-property :raw-value headline)
                (buffer-substring contents-begin (- contents-end 1))))))))))
 
-(defun first-header+content-buffer ()
+(defun twitch--edit-stream-first-header+content-buffer ()
   "Get first header and it's content from current buffer."
   (interactive)
-  (princ
-   (with-current-buffer (current-buffer) (first--header+content))))
+  (with-current-buffer (current-buffer) (twitch--edit-stream-first-header+content)))
 
-
+;; TESTING
 (with-temp-buffer
   (insert "
-#+TITLE: Twitch Hacks
-
 * Hacking Emacs Lisp
 
 Connecting emacs, elisp, org-mode and twitch.
 Learning how to parse org mode.
-
-* Edit Stream Info from CURL Version [0/0]
-
-** Twitch API + CURL [2/3]
-:LOGBOOK:
-CLOCK: [2020-05-16 Sat 18:37]--[2020-05-16 Sat 19:27] =>  0:50
-:END:
-
-- [X] determine curl command to set stream info
-- [X] set channel title via curl
-- [ ] set live notification via curl scripts
-
 ")
-  (princ (first-header+content-buffer)))
+  (twitch--edit-stream-first-header+content))
 
 (provide 'edit-stream-info)
+
 ;;; edit-stream-info.el ends here
