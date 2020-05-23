@@ -1,5 +1,9 @@
 #+TITLE: Twitch Hacks
 
+* Hacking Emacs Lisp
+
+Connecting Emacs, Elisp, org-mode and twitch. Learning how to compose JSON request body.
+
 * Edit Stream Info from CURL Version [0/0]
 
 ** Twitch API + CURL [2/3]
@@ -9,7 +13,7 @@ CLOCK: [2020-05-16 Sat 18:37]--[2020-05-16 Sat 19:27] =>  0:50
 
 - [X] determine curl command to set stream info
 - [X] set channel title via curl
-- [ ] set live notification via curl scripts
+- [ ] set go live notification via curl scripts
 
 *** Status
 
@@ -17,25 +21,45 @@ Blocked on invalid authorization token for kraken API.
   
 * Edit Stream Info from Org Mode Basic Version [0/0]
 
-** Org Mode Parsing [/]
+** Org Mode Parsing [1/1]
+#+BEGIN: clocktable :scope subtree :maxlevel 2
+#+CAPTION: Clock summary at [2020-05-22 Fri 22:56]
+| Headline                   | Time   |      |
+|----------------------------+--------+------|
+| *Total time*               | *3:47* |      |
+|----------------------------+--------+------|
+| \_  Org Mode Parsing [1/1] |        | 3:47 |
+#+END:
 
-- [ ] parse heading and text of an org file section to extract 
-  - [ ] stream title
-  - [ ] go live notification
+:LOGBOOK:
+CLOCK: [2020-05-17 Sun 18:26]--[2020-05-17 Sun 19:42] =>  1:16
+CLOCK: [2020-05-17 Sun 16:03]--[2020-05-17 Sun 17:50] =>  1:47
+CLOCK: [2020-05-16 Sat 19:36]--[2020-05-16 Sat 20:20] =>  0:49
+:END:
+
+- [X] parse heading and text of an org file section to extract 
+  - [X] stream title
+  - [X] go live notification
+  - [X] separate into clean functions
     
-** Compose curl Command and send to Twitch
+** Compose emacs request and send Status to Twitch
 
-- [ ] send curl command from inside emacs via elisp
-- [ ] function that parses org file section + composes curl command
-- [ ] use env vars in elisp to fill in tokens
-- [ ] auto send to twitch
+- [ ] function that composes request command from parsed output
+- [X] send request from inside emacs via elisp
+- [X] use env vars in elisp to fill in tokens
+- [X] auto send to twitch
 - [ ] provide feedback from response
 
-* Enhanced Version [0/0]
+** Compose emacs request and send Go Live Notification to Twitch
+
+- [ ] function that composes request command from parsed output
+
+* HOLD Enhanced Version [0/0]
 
 ** Category [/]
 
 - [ ] Include /Science and Technology/ category when editing stream info
+  
 ** Search Tags [/]
 
 - [ ] look into how to send search tags
@@ -50,6 +74,8 @@ Blocked on invalid authorization token for kraken API.
 - [[https://github.com/twitchdev/authentication-node-sample][getting auth token via node.js]]  
   
 ** API requests from Emacs
+
+- [[https://github.com/tkf/emacs-request][request.el]] 
 - [[https://dev.twitch.tv/docs/api/][twitch-api docs]]  
 - [[https://github.com/skeeto/elfeed][Emacs web feeds client]] 
 - [[https://github.com/atheriel/helm-twitch][checking whether your favourite Twitch.tv streamer is online, using the Helm framework]] 
@@ -57,7 +83,15 @@ Blocked on invalid authorization token for kraken API.
 ** Org Mode
 
 - [[http://ergoemacs.org/emacs/elisp_parse_org_mode.html][parse org mode in emacs tutorial]] 
+- [[https://orgmode.org/worg/index.html][worg]] 
+  - [[https://orgmode.org/worg/dev/org-element-api.html#accessors][worg:accessors]] 
 
 ** Elisp Development
 
 - [[https://www.gonsie.com/blorg/part1-org-for-dev-elisp.html][org mode to develop lisp]] 
+
+** TODO how to configure Emacs Lint
+
+- [[https://awesomeopensource.com/project/gonewest818/elisp-lint][elisp-lint github]] 
+
+(first-header+content-buffer)
