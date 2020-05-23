@@ -29,12 +29,19 @@
     (first-header-and-content)))
 
 
+(defun twitch--update-json (status)
+  "Generate JSON body for the update STATUS request."
+  (json-encode
+   `(:channel
+     (:status ,status
+      :game "Science & Technology"
+      :channel_feed_enabled t))))
 
 (defun twitch--update-status (channel-id status)
   "Update twitch channel CHANNEL-ID with STATUS."
   (let ((client-id (getenv "TWITCH_CLIENT_ID"))
         (oauth-id (getenv "TWITCH_OAUTH_ID")))
-    (custom-request
+    (request
       (format "https://api.twitch.tv/kraken/channels/%d" channel-id)
       :sync t
       :type "PUT"
@@ -43,7 +50,7 @@
                  ("Accept" . "application/vnd.twitchtv.v5+json")
                  ("Content-Type" . "application/json"))
       :parser 'json-read
-      :data (format "{\"channel\": {\"status\": \"%s\", \"game\": \"Science & Technology\", \"channel_feed_enabled\": true}}" status)
+      :data (twitch--update-json status)
       :success (cl-function
                 (lambda (&key data &allow-other-keys)
                   (message "I sent: %S" (assoc-default 'headers data))))
@@ -58,16 +65,19 @@
         (channel-id 145377094))
     (twitch--update-status channel-id status)))
 
-(twitch--update-status  145377094 "Goin on three seconds.")
 
 ;; TESTING
 (with-temp-buffer
   (insert "
 * Hacking Emacs Lisp
 
-Connecting emacs, elisp, org-mode and twitch. Learning how to parse org mode.
+Connecting emacs, elisp, org-mode and twitch.
+
+Learning how to parse org mode.
 ")
   (twitch-update))
+
+(twitch--update-status  145377094 "Goin on three seconds.")
 
 (provide 'edit-stream-info)
 

@@ -2,7 +2,8 @@
 
 * Hacking Emacs Lisp
 
-Connecting Emacs, Elisp, org-mode and twitch. Learning how to compose JSON request body.
+Connecting Emacs, Elisp, org-mode and twitch.
+Sending go live notification from org file header.
 
 * Edit Stream Info from CURL Version [0/0]
 
@@ -42,9 +43,10 @@ CLOCK: [2020-05-16 Sat 19:36]--[2020-05-16 Sat 20:20] =>  0:49
   - [X] go live notification
   - [X] separate into clean functions
     
-** Compose emacs request and send Status to Twitch
+** Compose emacs request and send Status to Twitch [5/6]
 
-- [ ] function that composes request command from parsed output
+- [X] figure out how to generate a JSON string via Elisp
+- [X] function that composes request command from parsed output
 - [X] send request from inside emacs via elisp
 - [X] use env vars in elisp to fill in tokens
 - [X] auto send to twitch
