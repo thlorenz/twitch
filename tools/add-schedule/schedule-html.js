@@ -23,8 +23,9 @@ function walkScheduleNodes(nodes) {
 
 function walkNodesRec(node, result) {
   const scheduleMatch = node.value != null ? node.value.match(scheduleRx) : null
+  const includeOnHold = false
   if (scheduleMatch != null) {
-    const processed = processScheduleMatch(scheduleMatch, node, true)
+    const processed = processScheduleMatch(scheduleMatch, node, includeOnHold)
     if (processed != null) result.push({ type: 'schedule', ...processed })
   } else if (node.type === 'header') {
     result.push({ type: 'header', ...processHeader(node) })
