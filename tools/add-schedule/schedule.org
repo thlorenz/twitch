@@ -2,15 +2,21 @@
 
 * Flutter
 
-** Birdz 
+** HOLD Birdz
 
-*** Building Bird Quiz with a Tinder like interface using Flutter
+*** HOLD Building Bird Quiz with a Tinder like interface using Flutter
 SCHEDULED: <2020-05-11 Mon 18:30-20:00>
 
-*** Building Bird Quiz with a Tinder like interface using Flutter
+*** HOLD Building Bird Quiz with a Tinder like interface using Flutter
 SCHEDULED: <2020-05-11 Tue 18:30-20:15>
 
 ** Multiplayer Game
+
+*** Building a Multiplayer 2D Game in Flutter
+SCHEDULED: <2020-05-12 Mon 18:30-20:15>
+
+*** Building a Multiplayer 2D Game in Flutter
+SCHEDULED: <2020-05-13 Tue 18:30-20:15>
 
 *** Building a Multiplayer 2D Game in Flutter
 SCHEDULED: <2020-05-14 Wed 18:30-20:15>
@@ -23,13 +29,13 @@ SCHEDULED: <2020-05-14 Fri 18:30-20:15>
 
 * Emacs / Elisp / Twitch Hacks
 
-*** Converting GoodReader PDF Annotations to Emacs Org Mode File via Elisp  
+*** Converting GoodReader PDF Annotations to Emacs Org Mode File via Elisp
 SCHEDULED: <2020-05-23 Sat 18:30-20:15>
 
-*** Converting GoodReader PDF Annotations to Emacs Org Mode File via Elisp  
+*** Converting GoodReader PDF Annotations to Emacs Org Mode File via Elisp
 SCHEDULED: <2020-05-24 Sun 14:00-17:45>
 
-*** Converting GoodReader PDF Annotations to Emacs Org Mode File via Elisp  
+*** Converting GoodReader PDF Annotations to Emacs Org Mode File via Elisp
 SCHEDULED: <2020-05-24 Sun 18:30-20:15>
 
 *** HOLD Setting Twitch Status from Emacs Org Mode
