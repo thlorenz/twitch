@@ -11,9 +11,11 @@ function scheduledHeader(node) {
   return siblings[0].children[0].value
 }
 
+const isOnHold = (item) => onholdRx.test(item)
+
 function processScheduleMatch(match, node, includeOnHold) {
   const header = scheduledHeader(node)
-  if (!includeOnHold && onholdRx.test(header)) return null
+  if (!includeOnHold && isOnHold(header)) return null
 
   const [
     ,
@@ -60,6 +62,6 @@ function processScheduleMatch(match, node, includeOnHold) {
 
 module.exports = {
   scheduleRx,
-  onholdRx,
+  isOnHold,
   processScheduleMatch,
 }

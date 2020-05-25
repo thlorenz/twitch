@@ -4,14 +4,22 @@ const org = require('org')
 const inspect = require('./lib/inspect')
 const parser = new org.Parser()
 
-const { scheduleRx, processScheduleMatch } = require('./lib/extract-utils')
+const {
+  isOnHold,
+  scheduleRx,
+  processScheduleMatch,
+} = require('./lib/extract-utils')
 
 function processHeader(node) {
   const firstChild = node.children[0]
   if (firstChild == null) return null
   const firstNestedChild = firstChild.children && firstChild.children[0]
   return (
-    firstNestedChild && { value: firstNestedChild.value, level: node.level }
+    firstNestedChild && {
+      value: firstNestedChild.value,
+      level: node.level,
+      onHold: isOnHold(firstNestedChild.value),
+    }
   )
 }
 
@@ -28,7 +36,10 @@ function walkNodesRec(node, result) {
     const processed = processScheduleMatch(scheduleMatch, node, includeOnHold)
     if (processed != null) result.push({ type: 'schedule', ...processed })
   } else if (node.type === 'header') {
-    result.push({ type: 'header', ...processHeader(node) })
+    const header = processHeader(node)
+    if (!header.onHold) {
+      result.push({ type: 'header', ...header })
+    }
   }
   if (node.children == null) return
 
