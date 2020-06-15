@@ -16,7 +16,7 @@ SCHEDULED: <2020-05-11 Tue 18:30-20:15>
 SCHEDULED: <2020-05-12 Thu 18:30-20:30>
 
 *** Building a Multiplayer 2D Game in Flutter
-SCHEDULED: <2020-05-12 Sat 18:30-20:30>
+SCHEDULED: <2020-05-12 Sun 18:30-20:30>
 
 * Emacs / Elisp / Twitch Hacks
 
